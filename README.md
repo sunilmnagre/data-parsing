@@ -30,7 +30,7 @@ npm install
 
 Now, start the application using Docker compose
 ```
-docker build -t parser . && docker run -it parser
+docker-compose up
 ```
 Open the browser and navigate to
 ```
