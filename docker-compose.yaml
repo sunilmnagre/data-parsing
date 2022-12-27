@@ -1,13 +1,13 @@
-# version of docker-compose
-version: '3.9'
-# 'services' are equivalent to 'containers'
+version: "3.3"
 services:
   app-redis:
-    # Use Docker Hub base image 'redis:alpine' 
+    container_name: "app-redis"
     image: 'redis:alpine'
-  parser-app:
-    restart: on-failure
-    build: ./app
-    # Specify an array of ports to map
+
+  data-parser:
+    build:
+      context: ./
     ports:
-      - '9000:9000'
+      - "9000:9000"
+    volumes:
+      - ./:/data-parser/

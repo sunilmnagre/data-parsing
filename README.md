@@ -36,3 +36,17 @@ Open the browser and navigate to
 ```
 http://localhost:9000
 ```
+
+#### Web service API's
+POST - http://localhost:9000/api/files
+Body
+```
+{
+   "url": "<File URL to get the file from",
+   "data": {
+     "data": "Data of the file"
+    }
+}
+```
+
+PATCH - http://localhost:9000/api/files/<ID>

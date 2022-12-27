@@ -1,9 +1,7 @@
-const _ = require('lodash');
-
 /**
  * Maps response into provided input structure
  * @param {array} data - Data to be mapped
- * @param {object} fieldMap - Mapper structure from and to fields
+ * @param {object} resultArray - Mapper structure from and to fields
  * @return {array} - Mapped data
  */
 const mapObject = (data, resultArray) => {
@@ -23,7 +21,7 @@ const mapObject = (data, resultArray) => {
 };
 
 /**
- * Maps the response into provided structure
+ * Maps the response into structured array
  * @param {array} result - Data to be mapped
  * @return {array} - Mapped data
  */

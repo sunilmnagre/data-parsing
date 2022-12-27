@@ -1,7 +1,7 @@
 {
-  "name": "test_webapp",
+  "name": "data-parser",
   "version": "1.0.0",
-  "description": "Node.js + Express.js on Docker",
+  "description": "Small application to consume the external API, parse the data and then create file",
   "main": "server.js",
   "scripts": {
     "start": "nodemon ./server.js"
@@ -10,10 +10,9 @@
     "axios": "^1.2.1",
     "config": "^3.3.8",
     "express": "^4.18.0",
-    "lodash": "^4.17.21",
     "node-schedule": "^2.1.0",
-    "redis": "3.1.2"
+    "redis": "^4.5.1"
   },
-  "author": "",
+  "author": "Sunil Nagre",
   "license": "ISC"
 }
